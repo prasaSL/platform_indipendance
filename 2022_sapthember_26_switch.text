@@ -1,0 +1,88 @@
+rules of switch statement
+
+the variable in a switch statement can only be intigers, converable integers (byte,short,char),strings andenums.
+you can have any number of case statemnts within a switch. Each case is following by the value to be compared to and colon.
+the value for a case must be the same data type as the variable in the switch and it must be a canstant or a literal.
+When the variable being switched on is equal to a case, the statement following that will execute until a brake statement is reached.
+When a brake statement is reached, the switch terminates and the follow of control jumps to the next line following switch statement.
+Not every case needs to contain a brake. If no brae appears , the flow of control will faill through to subsequent cases until a rake is reached
+A switch statement can have an optional defult case, witch must appear at the end of the switch. The defult case can be used for perfoming a task when none of the cases true.No brake is needed in the defult case.
+
+---------------------------------------------------------------------------------
+
+loop statement
+
+A loop statement allows to execute a statement or group of multiple times.
+type of loops used in java
+  For loop
+  While loop
+  Do while loop
+
+For loop
+
+a for loop is a repetition control structure that allows to efficiently write a loop that need to be exwcuted a specific number of times
+A for loop is useful when you know how meny times a task is to be repeated.
+
+Syntax of a for loop
+
+for(initialization; boolean_expressin;update){// Statements}
+The initialization step is executed first, and only onece. this step allows ypu to declare and initialize ny loop control variable and this step ends with a semi colan(;)
+Next the Voolean expression is evaluated. if it is true the body of the loop is executed.If it is fales the body of the loop will not be executed and control jumps to the next statement past the for loop
+after the body of the for loop gets executed, the control jumps brake up to the update statement. this statement allows you to update any loop control variables. this statement can be left blank with a semicolan at the end.
+the boolean expretion is now evaluted again. if it is true. the loop executes and the process repeate (body of loop then update step then boolean expression)after the boolean expretion is false the for loop terminates.
+
+public class loops {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+    }
+    
+}
+
+-------------------------------------------------------------------
+
+While loop
+
+while loop statement in java programing language repeatedly executes a target statement as long as a giving condition is true.
+syntax
+while (boolean_expression)
+{//Statements}
+
+public class loops {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+         System.out.println("------------------------------------------------------------");
+        int x = 0;
+        while (x<10) {
+            System.out.println(x);            
+            x++;
+        }
+        
+    }
+    
+}
+
+Q 1
+write a java program to print odd and even numbers between 0 to 10.
+
+public class loops {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            if (i%2 == 0 ) {
+                System.out.println(i +" is even number");
+            } else {
+                System.out.println(i +" is odd number");
+            }
+        }
+
+q 2
+write a java program to print numbers between 0 to 20 with the intervel of 3.
+
+Q 3
+Using a while loop print the numbers between 20 to 0 with descending order.
