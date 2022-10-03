@@ -70,16 +70,38 @@ public class loops {
 Q 1
 write a java program to print odd and even numbers between 0 to 10.
 
-public class loops {
 
+import java.util.Scanner;
+
+
+public class program {
+
+ 
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            if (i%2 == 0 ) {
-                System.out.println(i +" is even number");
-            } else {
-                System.out.println(i +" is odd number");
-            }
+       int value;
+       Scanner s = new Scanner(System.in);
+        System.out.println("pleace enter the number");
+        int num = s.nextInt();
+        if (num%2==0) {
+            value=0;
         }
+        else{
+        value=1;
+        switch(value)
+        {
+        case 0:System.out.println("even number");break;
+        case 1:System.out.println("odd number");break;
+        default:System.out.println("Invalid number");
+        
+        
+        }
+       }
+        
+        
+     }
+    
+}
+
 
 q 2
 write a java program to print numbers between 0 to 20 with the intervel of 3.
