@@ -1,0 +1,124 @@
+do while loop
+
+public class program {
+
+  
+    public static void main(String[] args) {
+        int i = 0;
+        do
+        {
+        
+            System.out.println(i);
+            i++;
+        }while (i<10);             
+            
+        
+        
+            }
+    
+}
+
+------------------------------------------------------------------------
+
+java arrays
+
+java provide a data structure , the array witch stores a fixed- size sequential collection of elemants of the same type . An array is used to store a collaction of data . but is often more useful to think of an array as a collaction of variables of the same type.
+
+declaring array variable
+
+syntax
+dataType[] arrayRefVar.
+
+or
+
+dat type arrayRefVar[]:
+the style DataType[] arrayRefVar is preferred.
+
+-------------------------------------------------------------------------------------------
+    public static void main(String[] args) {
+       int[] nums = new int[6];
+       nums[0] = 10;
+       nums[1] = 14;
+       nums[2] = 36;
+       nums[3] = 27;
+       nums[4] = 43;
+       nums[5] = 10;
+       
+        System.out.println(nums[2]);
+            
+        for (int i = 0; i < 6; i++) {
+            System.out.println(nums[i]);
+        }
+        
+            }
+    
+}
+------------------------------------------------------------------------
+
+    public static void main(String[] args) {
+       int[] nums = new int[6];
+       nums[0] = 10;
+       nums[1] = 14;
+       nums[2] = 36;
+       nums[3] = 27;
+       nums[4] = 43;
+       nums[5] = 10;
+       
+
+            
+        for (int i = 0; i <nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+        
+            }
+    
+}
+
+------------------------------------------------------------------------------------
+arrays sort 
+
+
+import java.util.Arrays;
+
+
+public class program {
+
+ 
+    public static void main(String[] args) {
+       int[] nums = new int[6];
+       nums[0] = 10;
+       nums[1] = 14;
+       nums[2] = 36;
+       nums[3] = 27;
+       nums[4] = 43;
+       nums[5] = 10;
+       
+
+            
+        for (int i = 0; i <nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+        System.out.println("-------------------------------------------------------------------------");
+        
+        Arrays.sort(nums);
+        
+         for (int i = 0; i <nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+        
+            }
+    
+}
+
+--------------------------------------------------------------------------------
+
+Q4
+write a java program to store the given  string and display the stored elemants of tha
+
+"this is a string array"
+
+Q5:
+write the java program to store six intiger in it and to display the stored numbers in desending order.
+
+Q6:
+write the java program to declare a double array of size five witch will accept five values from the user.
