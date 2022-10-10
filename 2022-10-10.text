@@ -1,0 +1,118 @@
+String class
+Strimg witch are widly used in java programing. are a sequence of characters. in java programing language, string are treated as objects.
+THe java platform provides the string 
+
+string hedaling methord in java include
+
+toUpperCase
+toLowercase
+compare To
+IndexOf
+Substring
+Equals
+charAt
+trim
+valeOf
+
+-------------------------------------------------------------------------------
+
+
+public class my {
+
+ 
+    public static void main(String[] args) {
+     String changecase = "text to change";
+        System.out.println(changecase);
+        String result1=changecase.toUpperCase();
+        System.out.println(result1);
+        String  result2=result1.toLowerCase();
+        System.out.println(result2);
+    }
+    
+}
+-----------------------------------------------------------------------------
+
+
+
+public class my {
+
+ 
+    public static void main(String[] args) {
+     String changecase = "text to change";
+        System.out.println(changecase);
+        String result1=changecase.toUpperCase();
+        System.out.println(result1);
+        String  result2=result1.toLowerCase();
+        System.out.println(result2);
+        
+        String word1= "ape";
+        String word2 = "app";
+        int result3 = word1.compareTo(word2);
+        if (result3<0) {
+            System.out.println("word1 is less then word2");
+        }
+        else if (result3>0) {
+            System.out.println("word1 is more then word 2");
+        }
+        else{
+            System.out.println("both word are same");
+        
+        }
+        String email = "saman@UOVt.ac.lk";
+        char amprsand = '@';
+        int result4 = email.indexOf(amprsand);
+        System.out.println(result4);
+    }
+    
+}
+
+
+--------------------------------------------------------------------
+
+import java.util.Scanner;
+
+
+public class my {
+
+ 
+    public static void main(String[] args) {
+     String changecase = "text to change";
+        System.out.println(changecase);
+        String result1=changecase.toUpperCase();
+        System.out.println(result1);
+        String  result2=result1.toLowerCase();
+        System.out.println(result2);
+        
+        String word1= "ape";
+        String word2 = "app";
+        int result3 = word1.compareTo(word2);
+        if (result3<0) {
+            System.out.println("word1 is less then word2");
+        }
+        else if (result3>0) {
+            System.out.println("word1 is more then word 2");
+        }
+        else{
+            System.out.println("both word are same");
+        
+        }
+        String email = "saman@UOVt.ac.lk";
+        char amprsand = '@';
+        int result4 = email.indexOf(amprsand);
+        System.out.println(result4);
+        Boolean isMatch = word1.equals(word2);
+        System.out.println(isMatch);
+        char aChar = word1.charAt(2);
+        System.out.println(aChar);
+        
+        String amend = word2.replace("app", "apple");
+        System.out.println(amend);
+    }
+    
+}
+
+----------------------------------------------------------------------
+
+Q7)
+declare the string "Micosoft Word" in a java program. From term clalled "Micro Word " based on the declare string.
+
